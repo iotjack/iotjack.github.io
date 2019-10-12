@@ -4,15 +4,20 @@
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
   
-  <title>Tag: test | IOTJack</title>
+  <title>Calling Async Function from Main | IOTJack</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="IOTJack">
-<meta property="og:url" content="https://iotjack.github.io/tags/test/index.html">
+  <meta name="description" content="Calling Async Function from Main for console programs 12345678910111213141516public static class Program&amp;#123;    public static void Main()    &amp;#123;        Console.WriteLine(&amp;quot;...&amp;quot;);">
+<meta name="keywords" content="C#">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Calling Async Function from Main">
+<meta property="og:url" content="https://iotjack.github.io/2019/01/07/main-async/index.html">
 <meta property="og:site_name" content="IOTJack">
+<meta property="og:description" content="Calling Async Function from Main for console programs 12345678910111213141516public static class Program&amp;#123;    public static void Main()    &amp;#123;        Console.WriteLine(&amp;quot;...&amp;quot;);">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-01-07T14:20:09.874Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="IOTJack">
+<meta name="twitter:title" content="Calling Async Function from Main">
+<meta name="twitter:description" content="Calling Async Function from Main for console programs 12345678910111213141516public static class Program&amp;#123;    public static void Main()    &amp;#123;        Console.WriteLine(&amp;quot;...&amp;quot;);">
   
     <link rel="alternative" href="/atom.xml" title="IOTJack" type="application/atom+xml">
   
@@ -68,39 +73,71 @@
   </div>
 </header>
     <div class="outer">
-      <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2018/11/04/setup-github-page/" class="archive-article-date">
-  <time datetime="2018-11-05T03:48:56.000Z" itemprop="datePublished">Nov 4</time>
+      <section id="main"><article id="post-main-async" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/01/07/main-async/" class="article-date">
+  <time datetime="2019-01-07T14:13:58.000Z" itemprop="datePublished">2019-01-07</time>
 </a>
-      
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Software/">Software</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/11/04/setup-github-page/">Setup Blog on Github Page</a>
+    <h1 class="article-title" itemprop="name">
+      Calling Async Function from Main
     </h1>
   
 
-    </header>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Calling Async Function from Main for console programs</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">public static class Program</span><br><span class="line">&#123;</span><br><span class="line">    public static void Main()</span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(&quot;...&quot;);</span><br><span class="line">        ProcessAsync().GetAwaiter().GetResult();</span><br><span class="line"></span><br><span class="line">        Console.WriteLine(&quot;Press any key to exit the sample application.&quot;);</span><br><span class="line">        Console.ReadLine();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    private static async Task ProcessAsync()</span><br><span class="line">    &#123;</span><br><span class="line">        ...</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      
+        <a data-url="https://iotjack.github.io/2019/01/07/main-async/" data-id="ck1o30mq70005p0wdasujlpl5" class="article-share-link">Share</a>
+      
+
+      
+
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C#</a></li></ul>
+
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2019/01/29/netcore3/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          .net core 3
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/01/04/README/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Markdown Basics</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
 
 </section>
       

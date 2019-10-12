@@ -4,15 +4,19 @@
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
   
-  <title>Tag: test | IOTJack</title>
+  <title>uwp | IOTJack</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="IOTJack">
-<meta property="og:url" content="https://iotjack.github.io/tags/test/index.html">
+  <meta name="description" content="Pick up UWP App develop again play1 - E:\Dev\UWP\FinApp\play1\play1\CustListPage.xamlx:bind  default binding mode is One Time; need to set it to OneWay or TwoWay to show updated data  1234567891011&amp;lt">
+<meta property="og:type" content="article">
+<meta property="og:title" content="uwp">
+<meta property="og:url" content="https://iotjack.github.io/2019/02/16/uwp/index.html">
 <meta property="og:site_name" content="IOTJack">
+<meta property="og:description" content="Pick up UWP App develop again play1 - E:\Dev\UWP\FinApp\play1\play1\CustListPage.xamlx:bind  default binding mode is One Time; need to set it to OneWay or TwoWay to show updated data  1234567891011&amp;lt">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-10-12T21:31:09.413Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="IOTJack">
+<meta name="twitter:title" content="uwp">
+<meta name="twitter:description" content="Pick up UWP App develop again play1 - E:\Dev\UWP\FinApp\play1\play1\CustListPage.xamlx:bind  default binding mode is One Time; need to set it to OneWay or TwoWay to show updated data  1234567891011&amp;lt">
   
     <link rel="alternative" href="/atom.xml" title="IOTJack" type="application/atom+xml">
   
@@ -68,39 +72,72 @@
   </div>
 </header>
     <div class="outer">
-      <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2018/11/04/setup-github-page/" class="archive-article-date">
-  <time datetime="2018-11-05T03:48:56.000Z" itemprop="datePublished">Nov 4</time>
+      <section id="main"><article id="post-uwp" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/02/16/uwp/" class="article-date">
+  <time datetime="2019-02-17T00:20:29.000Z" itemprop="datePublished">2019-02-16</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/11/04/setup-github-page/">Setup Blog on Github Page</a>
+    <h1 class="article-title" itemprop="name">
+      uwp
     </h1>
   
 
-    </header>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Pick up UWP App develop again</p>
+<p>play1 - E:\Dev\UWP\FinApp\play1\play1\CustListPage.xaml<br>x:bind</p>
+<ul>
+<li>default binding mode is One Time; need to set it to OneWay or TwoWay to show updated data</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;ListView x:Name=&quot;Lst&quot; Margin=&quot;10&quot; ItemsSource=&quot;&#123;x:Bind Customers&#125;&quot; HorizontalAlignment=&quot;Center&quot;   VerticalAlignment=&quot;Center&quot;&gt;</span><br><span class="line">    &lt;ListView.ItemTemplate&gt;</span><br><span class="line">        &lt;DataTemplate x:DataType=&quot;local:Customer&quot;&gt;</span><br><span class="line">                &lt;StackPanel Orientation=&quot;Horizontal&quot; Margin=&quot;10&quot;&gt;</span><br><span class="line">                    &lt;!--&lt;TextBlock Text=&quot;&#123;Binding Name&#125;&quot; Margin=&quot;10,0&quot;/&gt;--&gt;</span><br><span class="line">                    &lt;TextBlock Text=&quot;&#123;x:Bind Name, Mode=OneWay&#125;&quot;  Margin=&quot;10,0&quot;/&gt;</span><br><span class="line">                    &lt;TextBox Text=&quot;&#123;x:Bind Age, Mode=TwoWay&#125;&quot;  Margin=&quot;10,0&quot;/&gt;</span><br><span class="line">                &lt;/StackPanel&gt;</span><br><span class="line">            &lt;/DataTemplate&gt;</span><br><span class="line">    &lt;/ListView.ItemTemplate&gt;</span><br><span class="line">&lt;/ListView&gt;</span><br></pre></td></tr></table></figure>
+<p>Application Settings - load, save, delete<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ApplicationDataContainer localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;</span><br><span class="line">if (localSettings.Values[&quot;test setting&quot;] != null)</span><br><span class="line">&#123; var localValue = localSettings.Values[&quot;test setting&quot;] as string;</span><br><span class="line">     tb.Text = localValue;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>Save <figure class="highlight plain"><figcaption><span>setting"] </span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Delete ```localSettings.Values.Remove(&quot;test setting&quot;);</span><br></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+        <a data-url="https://iotjack.github.io/2019/02/16/uwp/" data-id="ck1o30mqm000ap0wdwwm764cj" class="article-share-link">Share</a>
+      
+
+      
+
+      
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2019/10/12/Excel-Hyperlink/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Excel Hyperlink
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/01/29/netcore3/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">.net core 3</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
 
 </section>
       
